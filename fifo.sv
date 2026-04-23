@@ -53,7 +53,7 @@ module fifo(
     end
   
   
-  // Full and Empty falg assignments
+  // Full and Empty flag assignments
   assign empty=((wr_ptr - rd_ptr)==0)?1'b1:1'b0;
   assign full=((wr_ptr - rd_ptr)==31)?1'b1:1'b0;
   
